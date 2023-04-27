@@ -1,16 +1,17 @@
+import Navbar from './Navbar';
+import Home from './Home';
+import './App.css';
 
-function App = () => {
+const App = () => {
 
 
     return (
         <>
-        <h1>React App</h1>
-        <table>
-            <thead>
-                <tr>Recordings</tr>
-                
-            </thead>
-        </table>
+        <Navbar/>
+        <div className='content'>
+            <h1>React App</h1>
+            <Home />
+        </div>
         </>
     );
 }
