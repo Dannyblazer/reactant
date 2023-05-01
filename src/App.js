@@ -9,7 +9,6 @@ const App = () => {
         <>
         <Navbar/>
         <div className='content'>
-            <h1>React App</h1>
             <Home />
         </div>
         </>
