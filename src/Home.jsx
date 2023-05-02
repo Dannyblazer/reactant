@@ -8,9 +8,14 @@ const Home = () => {
         { title: 'Web dev top tips', body: 'lorem ipsum ...', author: 'luigi', id:3},
     ]);
 
+    const deleteblog = (id) => {
+        const newblogs = blogs.filter(blog => blog.id !== id);
+        setblogs(newblogs);
+    }
+
     return (
        <div className="home">
-        < BlogList blogs={blogs} title='All Blogs' />
+        < BlogList blogs={blogs} title='All Blogs' deleteblog={deleteblog} />
        </div>
     );
 }
